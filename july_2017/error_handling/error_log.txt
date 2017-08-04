@@ -1,0 +1,2 @@
+Error: undefined method `+' for nil:NilClass at 2017-08-04 13:29:35 -0600
+Error: divided by 0 at 2017-08-04 13:30:13 -0600

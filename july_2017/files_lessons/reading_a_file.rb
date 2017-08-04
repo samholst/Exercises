@@ -1,5 +1,5 @@
-teams = File.read("files-lessons/teams.txt")
-teams_two = File.read("files-lessons/other_teams.txt")
+teams = File.read("files_lessons/teams.txt")
+teams_two = File.read("files_lessons/other_teams.txt")
 
 p teams.split(',') + teams_two.split(',')
 
