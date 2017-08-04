@@ -7,28 +7,25 @@
 #     puts "buzz"
 #   elsif x % 3 == 0
 #     puts "fizz"
-#   else 
+#   else
 #     puts x
 #   end
 # end
 
 
 def fizz_buzz numbers
-  numbers.each do |y| 
+  numbers.each do |y|
     if y % 15 == 0
       puts "fizzbuzz"
     elsif y % 5 == 0
       puts "buzz"
     elsif y % 3 == 0
       puts "fizz"
-    else 
+    else
       puts y
     end
   end
 end
 
-numbers = Array.new(100) { |i| i += 1 } 
+numbers = Array.new(100) { |i| i += 1 }
 fizz_buzz numbers
-
-
-git remote add origin https://github.com/samholst/portfolio.git
