@@ -82,14 +82,14 @@ puts ""
 ("a".."g").to_a.map { |i| i * 2 }
 
 Hash[[1, 2.1, 3.33, 0.9].map { |x| [x, x.to_i]}]
-# {1=>1, 2.1=>2, 3.33=>3, 0.9=>0} 
+# {1=>1, 2.1=>2, 3.33=>3, 0.9=>0}
 
 # Map Part #2
 Hash[%w(A dynamic open source programming language.map).map {|x| [x, x.length]}]
-# {"A"=>1, "dynamic"=>7, "open"=>4, "source"=>6, "programming"=>11, "language.map"=>12} 
+# {"A"=>1, "dynamic"=>7, "open"=>4, "source"=>6, "programming"=>11, "language.map"=>12}
 
 {:a => "foo", :b => "bar"}.map { |a, b| "#{a}=#{b}" }.join('&')
-# "a=foo&b=bar" 
+# "a=foo&b=bar"
 
 
 # Inject Method
@@ -107,6 +107,3 @@ puts total
 
 [3, 2, 4, 53, 5, 3, 23343, 4342, 12, 3].inject(&:*)
 # 69618932585280
-
-
-
