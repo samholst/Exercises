@@ -27,14 +27,11 @@ class Rpssl
     won player_1, player_2
   end
 
-  def hand_stir
-  end
-
   def won player1, player2
     if @game_hash[player1]["loses_to"].include? player2
-      puts "Player 2 has won!"
+      puts "Player 2 has won! #{player2} > #{player1}"
     elsif @game_hash[player2]["loses_to"].include? player1
-      puts "Player 1 has won!"
+      puts "Player 1 has won! #{player1} > #{player2}"
     else
       puts "Stale mate!"
     end

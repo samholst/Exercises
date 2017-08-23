@@ -1,0 +1,21 @@
+I recently graduated with a Bachelors of Science in Psychology and a Bachelors of Arts in Spanish. Over the years, I've developed a passion for programming and creating/building web applications. I've been advancing my knowledge bit by bit to keep up with the current most modern techniques of programming. I had always planned to be in law enforcement, but my career path changed when I lost nearly $1,000 in an unused housing contract after getting married. This sparked an innate desire for me to want to help other people while feeding my desire to be an excellent coder. I accomplished starting a business with college students in the selling of buying of housing contracts and textbooks, but eventually decided to seek working with a previously establish company.
+
+
+
+- 20% about you now
+  ~ about me
+  ~ contact info
+  ~ relevant hobbies
+
+- 60% projects and technical experience
+  ~ skills
+  ~ languages
+  ~ current projects (including descriptors of implementation)
+
+ -20% your history
+  ~ education
+  ~ work history
+  ~ awards
+
+styled resume
+canva.com
