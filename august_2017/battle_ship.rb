@@ -178,17 +178,6 @@ class BattleShip
     end
   end
 
-  def computer_ship_placement2 # Cassidy
-    #randomized placement
-    # arr = []
-    # letters = ['a','b','c','d']
-    # arr  << letters.sample << rand(1..4).to_s
-    # arr.join()
-    # @comp_grid["a"][1] = "S"
-    # @comp_grid["b"][1] = "S"
-    # @comp_grid["c"][1] = "S"
-  end
-
   def computer_ship_placement # Cassidy
     #randomized placement
     #Brayden typed some letters here
@@ -206,7 +195,7 @@ class BattleShip
   end
 
   def vertical
-      validation =  @choice[1] +2
+      validation =  @choice[1] + 2
       validation > 4 ? can_place = 'invalid' : can_place = 'valid'
     case can_place
       when 'invalid'
@@ -225,7 +214,7 @@ class BattleShip
       validation > 'd' ? can_place = 'invalid' : can_place = 'valid'
     case can_place
       when 'invalid'
-        @comp_grid[@choice[0]][@choice[1] ] = "S"
+        @comp_grid[@choice[0]][@choice[1]] = "S"
         @comp_grid[(@choice[0].ord-1).chr][@choice[1]] = "S"
         @comp_grid[(@choice[0].ord-2).chr][@choice[1]] = "S"
       when 'valid'
