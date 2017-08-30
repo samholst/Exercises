@@ -4,6 +4,16 @@
 	},
 	"files": [
 		"classes_intro/classes_intro.ts",
-    "hello_world/hello_world.ts"
+    "hello_world/hello_world.ts",
+		"variable_types/variable_types.ts",
+		"string_interpolation/string_interpolation.ts",
+		"type_list/type_list.ts",
+		"type_alias/type_alias.ts",
+		"union_types/union_types.ts",
+		"arithmetic_operators/arithmetic_operators.ts",
+		"conditionals/conditionals.ts",
+		"conditional_operators/conditional_operators.ts",
+		"compound_conditionals/compound_conditionals.ts",
+		"loops/loops.ts"
 	]
 }
