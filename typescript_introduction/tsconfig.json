@@ -14,6 +14,8 @@
 		"conditionals/conditionals.ts",
 		"conditional_operators/conditional_operators.ts",
 		"compound_conditionals/compound_conditionals.ts",
-		"loops/loops.ts"
+		"loops/loops.ts",
+		"creating_functions/creating_functions.ts",
+		"function_agruments/function_agruments.ts"
 	]
 }
