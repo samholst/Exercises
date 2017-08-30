@@ -21,3 +21,6 @@
 /usr/local/bin/tsserver -> /usr/local/lib/node_modules/typescript/bin/tsserver
 + typescript@2.4.2
 ````
+
+Type ````tsc```` in terminal to compile all the files in your ````tsconfig.json````
+Then run ````node filename```` to have it run your code
