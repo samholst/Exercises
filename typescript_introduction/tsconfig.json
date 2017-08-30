@@ -3,7 +3,7 @@
 		"sourceMap": true
 	},
 	"files": [
-		"lesson_1_typescript.ts",
-    "005_typescript_config.ts"
+		"classes_intro/classes_intro.ts",
+    "hello_world/hello_world.ts"
 	]
 }
