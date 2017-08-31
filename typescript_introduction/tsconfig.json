@@ -23,6 +23,10 @@
 		"invoked_functions/invoked_functions.ts",
 		"immediate_invoked_agruments/immediate_invoked_agruments.ts",
 		"closures_intro/closures_intro.ts",
-		"inheritance/inheritance.ts"
+		"inheritance/inheritance.ts",
+		"objects/objects.ts",
+		"interfaces/interfaces.ts",
+		"interface_functions/interface_functions.ts",
+		"interface_classes/interface_classes.ts"
 	]
 }
