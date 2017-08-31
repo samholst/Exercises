@@ -1,0 +1,24 @@
+<script>
+var arr = [1,2,3,4,5];
+console.log(arr.length);
+arr[arr.length] = 7;
+console.log(arr);
+
+function foo1()
+{
+  return {
+    bar: "hello"
+  };
+}
+
+function foo2()
+{
+  return
+  {
+    bar: "hello"
+  };
+}
+
+console.log(foo1());
+console.log(foo2());
+</script>

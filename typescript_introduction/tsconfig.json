@@ -16,6 +16,13 @@
 		"compound_conditionals/compound_conditionals.ts",
 		"loops/loops.ts",
 		"creating_functions/creating_functions.ts",
-		"function_agruments/function_agruments.ts"
+		"function_agruments/function_agruments.ts",
+		"arrow_function/arrow_function.ts",
+		"function_declarations/function_declarations.ts",
+		"javascript_hoisting/javascript_hoisting.ts",
+		"invoked_functions/invoked_functions.ts",
+		"immediate_invoked_agruments/immediate_invoked_agruments.ts",
+		"closures_intro/closures_intro.ts",
+		"inheritance/inheritance.ts"
 	]
 }
