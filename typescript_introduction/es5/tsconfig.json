@@ -8,6 +8,8 @@
 	},
 	"files": [
 		"decorators/decorators.ts",
-		"decortators_classes/decortators_classes.ts"
+		"decorators_classes/decorators_classes.ts",
+		"method_decorators/method_decorators.ts",
+		"decorator_example_angular/decorator_example_angular.ts"
 	]
 }

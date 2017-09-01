@@ -7,17 +7,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var AccountsPayable = (function () {
-    function AccountsPayable() {
+var AccountsPayable2 = (function () {
+    function AccountsPayable2() {
     }
-    AccountsPayable = __decorate([
-        detailsLog('billing'),
+    AccountsPayable2.prototype.deleteAccount = function () {
+        console.log('Deleting account...');
+    };
+    __decorate([
+        admin,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], AccountsPayable2.prototype, "deleteAccount", null);
+    AccountsPayable2 = __decorate([
+        detailsLog2('billing'),
         __metadata("design:paramtypes", [])
-    ], AccountsPayable);
-    return AccountsPayable;
+    ], AccountsPayable2);
+    return AccountsPayable2;
 }());
 // decorators return a function and for classes, need to return an object
-function detailsLog(dashboard) {
+function detailsLog2(dashboard) {
     if (dashboard == 'billing') {
         console.log('Working in the billing department');
         return function (target) { };
@@ -26,5 +35,10 @@ function detailsLog(dashboard) {
         return function (target) { };
     }
 }
-var account = new AccountsPayable;
-//# sourceMappingURL=decortators_classes.js.map
+function admin(target, propertyKey, descriptor) {
+    console.log('Doing admin check');
+    return descriptor;
+}
+var account2 = new AccountsPayable2;
+account2.deleteAccount();
+//# sourceMappingURL=method_decorators.js.map

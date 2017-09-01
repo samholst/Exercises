@@ -1,6 +1,10 @@
 @detailsLog('billing')
-
 class AccountsPayable {
+  constructor() {}
+}
+
+@detailsLog('warehouse')
+class ProductManager {
   constructor() {}
 }
 
@@ -15,3 +19,4 @@ function detailsLog(dashboard : string) {
 }
 
 var account = new AccountsPayable;
+var pm = new ProductManager;
