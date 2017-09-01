@@ -4,6 +4,7 @@ var dbQuery = function() : void {
   }, 3000);
 }
 
+// **** STUDY **** the =>
 function loadPage(q : () => void) {
   console.log('Header');
   q();

@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "amd",
+		"target": "es5",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"sourceMap": true
+	},
+	"files": [
+		"decorators/decorators.ts",
+		"decortators_classes/decortators_classes.ts"
+	]
+}

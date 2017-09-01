@@ -3,6 +3,7 @@ var dbQuery = function () {
         console.log('Query results');
     }, 3000);
 };
+// **** STUDY **** the =>
 function loadPage(q) {
     console.log('Header');
     q();
