@@ -27,6 +27,8 @@
 		"objects/objects.ts",
 		"interfaces/interfaces.ts",
 		"interface_functions/interface_functions.ts",
-		"interface_classes/interface_classes.ts"
+		"interface_classes/interface_classes.ts",
+		"namespaces/namespaces.ts",
+		"this_construct/this_construct.ts"
 	]
 }
