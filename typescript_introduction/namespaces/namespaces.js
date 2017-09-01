@@ -1,35 +1,33 @@
 var Blog;
 (function (Blog) {
-    var Post = (function () {
-        function Post(post) {
+    class Post {
+        constructor(post) {
             this.title = post.title;
             this.body = post.body;
         }
-        Post.prototype.printPost = function () {
+        printPost() {
             console.log(this.title);
             console.log(this.body);
-        };
-        return Post;
-    }());
+        }
+    }
     Blog.Post = Post;
 })(Blog || (Blog = {}));
 var Content;
 (function (Content) {
-    var Post = (function () {
-        function Post(post) {
+    class Post {
+        constructor(post) {
             this.title = post.title;
             this.body = post.body;
             this.slug = post.slug;
             this.seoKeywords = post.seoKeywords;
         }
-        Post.prototype.printPost = function () {
+        printPost() {
             console.log(this.title);
             console.log(this.body);
             console.log(this.slug);
             console.log(this.seoKeywords);
-        };
-        return Post;
-    }());
+        }
+    }
     Content.Post = Post;
 })(Content || (Content = {}));
 var blog_post = new Blog.Post({

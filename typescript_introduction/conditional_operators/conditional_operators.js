@@ -1,4 +1,4 @@
-var x2 = 100;
+let x2 = 100;
 // if(x2 == 200) {
 // 	console.log('Condition passed');
 // }

@@ -1,9 +1,9 @@
-var fullName3 = function (first, last) {
+var fullName3 = (first, last) => {
     return first + " " + last;
 };
 console.log(fullName3('Jordan', 'Hudgens'));
 // Jordan Hudgens
-var gradeGenerator3 = function (grade) {
+var gradeGenerator3 = (grade) => {
     if (grade < 60) {
         return 'F';
     }

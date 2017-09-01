@@ -1,5 +1,5 @@
 function profile(user) {
-    return "Welcome, " + user.firstName + " " + user.lastName;
+    return `Welcome, ${user.firstName} ${user.lastName}`;
 }
 var realPerson = {
     email: 'test@gmail.com',

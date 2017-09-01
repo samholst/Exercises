@@ -21,16 +21,16 @@
 function lineup() {
     var nowBatting = 1;
     return {
-        nextBatter: function () { nowBatting++; },
-        currentBatter: function () { return nowBatting; }
+        nextBatter() { nowBatting++; },
+        currentBatter() { return nowBatting; }
     };
 }
-var batters = lineup();
+let batters = lineup();
 console.log(batters.currentBatter());
 batters.nextBatter();
 console.log(batters.currentBatter());
 batters.nextBatter();
 console.log(batters.currentBatter());
-var pitchers = lineup();
+let pitchers = lineup();
 console.log(pitchers.currentBatter());
 //# sourceMappingURL=closures_intro.js.map

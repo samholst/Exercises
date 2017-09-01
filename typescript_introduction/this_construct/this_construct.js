@@ -1,23 +1,21 @@
-var InvoiceNew = (function () {
-    function InvoiceNew(total) {
+class InvoiceNew {
+    constructor(total) {
         this.total = total;
     }
-    InvoiceNew.prototype.printTotal = function () {
+    printTotal() {
         console.log(this.total);
-    };
+    }
     // printLater(time : number) {
     //   setTimeout(function() {
     //     console.log(this.total);
     //   }, time);
     // }
-    InvoiceNew.prototype.printLater = function (time) {
-        var _this = this;
-        setTimeout(function () {
-            console.log(_this.total);
+    printLater(time) {
+        setTimeout(() => {
+            console.log(this.total);
         }, time);
-    };
-    return InvoiceNew;
-}());
+    }
+}
 var invoiceNew = new InvoiceNew(400);
 invoiceNew.printTotal();
 invoiceNew.printLater(1000);

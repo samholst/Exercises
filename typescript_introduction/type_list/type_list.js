@@ -1,14 +1,14 @@
 // Boolean
-var paidMyAccount = true;
+let paidMyAccount = true;
 // Number
-var age = 33;
+let age = 33;
 var taxRate = 7.5;
 // String
 var fullName = "Sammy";
 // Array
 var ages = [33, 27, 11];
 // Tuple (format must match exatcly to not throw an error when assigning)
-var player;
+let player;
 player = [3, "John"];
 // Enum
 var ApprovalStatus;
@@ -18,7 +18,7 @@ var ApprovalStatus;
     ApprovalStatus[ApprovalStatus["Rejected"] = 2] = "Rejected";
 })(ApprovalStatus || (ApprovalStatus = {}));
 ;
-var job = ApprovalStatus.Pending;
+let job = ApprovalStatus.Pending;
 // Any
 var apiData = ["sam", true, 123];
 // Void (method that returns nothing)

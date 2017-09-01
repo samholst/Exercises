@@ -1,4 +1,4 @@
-var players2 = ["Altuve", "Corerra", "Bregman"];
+let players2 = ["Altuve", "Corerra", "Bregman"];
 console.log(players2);
 var names;
 names = ["Sam Holst", "Olga Holst"];

@@ -1,6 +1,5 @@
 // ? makes the argument optional. You cannot have a required value after an optional value
-function printAddress(street, streetTwo, state) {
-    if (state === void 0) { state = 'AZ'; }
+function printAddress(street, streetTwo, state = 'AZ') {
     console.log(street);
     if (streetTwo) {
         console.log(streetTwo);
@@ -10,15 +9,10 @@ function printAddress(street, streetTwo, state) {
 printAddress('123 hi street', 'Suite #45');
 printAddress('123 hi street');
 printAddress('123 hi street', 'Suite #45', 'NV');
-function lineupCard(team) {
-    var players = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        players[_i - 1] = arguments[_i];
-    }
+function lineupCard(team, ...players) {
     console.log('Team: ' + team);
-    for (var _a = 0, players_1 = players; _a < players_1.length; _a++) {
-        var player_1 = players_1[_a];
-        console.log(player_1);
+    for (let player of players) {
+        console.log(player);
     }
 }
 lineupCard('Astros', "Sam", "John", "Jack");
