@@ -1,4 +1,4 @@
-// Still will work even though it's before the method
+// Still will work even though it's before the method (hoisting)
 console.log(fullName51("Sam", "Holst"));
 
 // Function Declaration
@@ -9,7 +9,7 @@ function fullName51(first : string, last : string) : string {
 // Function Expression
 var otherFullName1 : (first : string, last : string) => string;
 
-otherFullName = function (first : string, last : string) {
+otherFullName1 = function (first : string, last : string) {
   return first + " " + last;
 }
 

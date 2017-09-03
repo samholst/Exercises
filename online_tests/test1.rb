@@ -141,4 +141,4 @@ def stringSimilarity(inputs)
   total
 end
 
-p stringSimilarity "ababaa"
+p stringSimilarity "abc"
