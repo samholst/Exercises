@@ -9,7 +9,15 @@
 -- where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is the their monthly salary.
 --
 -- Sample Input
---
+-- +-------------------+-------------------+
+-- |	Field			  |	Type			|
+-- +-------------------+-------------------+
+-- |	ID (PK)			|	int				|
+-- |	Name			  |	char(20)		|
+-- |	Age				  |	int				|
+-- |	Address			|	char(25)		|
+-- |	Salary			|	decimal(18,2)	|
+-- +-------------------+-------------------+
 --
 --
 -- Sample Output
