@@ -124,3 +124,177 @@ touch homepage.component.ts
 ````
 
 To start the server, type ````npm start````
+
+#----------------------------------------------------------------#
+
+````
+# package.json (after bootstrap, this is for angular 4)
+
+{
+  "name": "freelance-camp-fe",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "^4.3.2",
+    "@angular/compiler": "^4.3.2",
+    "@angular/core": "^4.3.2",
+    "@angular/forms": "^4.3.2",
+    "@angular/http": "^4.3.2",
+    "@angular/platform-browser": "^4.3.2",
+    "@angular/platform-browser-dynamic": "^4.3.2",
+    "@angular/router": "^4.3.2",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.29",
+    "core-js": "^2.4.1",
+    "latest": "^0.2.0",
+    "recompile": "^1.0.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.4.2",
+    "systemjs": "0.19.39",
+    "to": "^0.2.9",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.4.2"
+  }
+}
+
+````
+
+````
+# tsconfig.json
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [ "es2015", "dom" ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es5"
+
+    },
+    "exclude": [
+        "node_modules/*"
+    ]
+}
+````
+#----------------------------------------------------------------#
+
+
+## Creating the main app files
+We need to create an AppRoutingModule, AppComponent, AppComponent.html, AppModule, and Main.ts files for the app to be able to bootstrap.
+
+Sample file are found below:
+
+````
+# app-routing-module.ts
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { HomepageComponent } from './homepage/homepage.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { ProposalListComponent } from './proposal/proposal-list.component';
+import { ProposalNewComponent } from './proposal/proposal-new.component';
+
+const routes : Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomepageComponent },
+  { path: 'documents', component: DocumentsComponent },
+  { path: 'proposals', component: ProposalListComponent },
+  { path: 'proposals/new', component: ProposalNewComponent },
+]
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}
+````
+
+````
+# app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+
+import { HomepageComponent } from './homepage/homepage.component';
+import { AppComponent } from './app.component';
+import { DocumentsComponent } from './documents/documents.component';
+import { ProposalListComponent } from './proposal/proposal-list.component';
+import { ProposalNewComponent } from './proposal/proposal-new.component';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+  declarations: [
+    AppComponent,
+    HomepageComponent,
+    DocumentsComponent,
+    ProposalListComponent,
+    ProposalNewComponent
+  ],
+  bootstrap: [
+    AppComponent
+  ]
+})
+export class AppModule {}
+````
+
+````
+# app.component.ts
+import  { Component } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: 'app',
+  templateUrl: 'app.component.html'
+})
+export class AppComponent {
+  title: 'Freelance Bootcamp Dashboard';
+}
+````
+
+````
+# app.component.html
+<h1>Navigation</h1>
+
+<a routerLink="/home">Home</a>
+<a routerLink="/documents">Docs</a>
+<a routerLink="/proposals">Proposals</a>
+<a routerLink="/proposals/new">New Proposal</a>
+
+
+<router-outlet></router-outlet>
+````
+
+````
+# main.ts
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
+````
