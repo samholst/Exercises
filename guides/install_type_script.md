@@ -1,6 +1,5 @@
 ## HomeBrew
-- ````/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-````
+- ````/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"````
 - https://brew.sh/
 
 ## Node.js
@@ -16,7 +15,7 @@
 - Compile ````tsc helloworld.ts````
 - http://www.typescriptlang.org/
 
-````
+````plaintext
 /usr/local/bin/tsc -> /usr/local/lib/node_modules/typescript/bin/tsc
 /usr/local/bin/tsserver -> /usr/local/lib/node_modules/typescript/bin/tsserver
 + typescript@2.4.2

@@ -2,7 +2,7 @@
 - see install_type_script.md
 
 ## Create these files
-````
+````plaintext
 # package.json
 
 {
@@ -47,7 +47,7 @@
 }
 ````
 
-````
+````plaintext
 #tsconfig.json
 
 {
@@ -64,7 +64,7 @@
 }
 ````
 
-````
+````plaintext
 # systemjs.config.js
 
 /**
@@ -111,13 +111,13 @@
 
 Then run this command in the directory you are running your project in
 
-````
+````plaintext
 sudo npm install
 ````
 
-Then create a ````mkdir app```` followed by:
+Then create a ````plaintext mkdir app```` followed by:
 
-````
+````plaintext
 touch app.module.ts
 touch main.ts
 touch homepage.component.ts
@@ -125,9 +125,9 @@ touch homepage.component.ts
 
 To start the server, type ````npm start````
 
-#----------------------------------------------------------------#
+#-------------------------------#
 
-````
+````plaintext
 # package.json (after bootstrap, this is for angular 4)
 
 {
@@ -175,7 +175,7 @@ To start the server, type ````npm start````
 
 ````
 
-````
+````plaintext
 # tsconfig.json
 {
     "compilerOptions": {
@@ -195,7 +195,7 @@ To start the server, type ````npm start````
     ]
 }
 ````
-#----------------------------------------------------------------#
+#-------------------------------#
 
 
 ## Creating the main app files
@@ -203,7 +203,7 @@ We need to create an AppRoutingModule, AppComponent, AppComponent.html, AppModul
 
 Sample file are found below:
 
-````
+````plaintext
 # app-routing-module.ts
 
 import { NgModule } from '@angular/core';
@@ -229,7 +229,9 @@ const routes : Routes = [
 export class AppRoutingModule {}
 ````
 
-````
+
+
+````plaintext
 # app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -263,7 +265,9 @@ import { ProposalNewComponent } from './proposal/proposal-new.component';
 export class AppModule {}
 ````
 
-````
+
+
+````plaintext
 # app.component.ts
 import  { Component } from '@angular/core';
 
@@ -277,7 +281,9 @@ export class AppComponent {
 }
 ````
 
-````
+
+
+````angular
 # app.component.html
 <h1>Navigation</h1>
 
@@ -290,7 +296,9 @@ export class AppComponent {
 <router-outlet></router-outlet>
 ````
 
-````
+
+
+````plaintext
 # main.ts
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
