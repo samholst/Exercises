@@ -1,5 +1,7 @@
 require 'rspec'
 
+# p ['Sam', 'Ben', 'Bekah'].sort { |a, b| a <=> b }
+
 def total_sorter invoices
   # invoices.sort_by { |collection| collection.total }.reverse
   invoices.sort { |a, b| b.total <=> a.total }

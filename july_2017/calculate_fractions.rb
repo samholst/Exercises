@@ -7,6 +7,8 @@ def fraction_calculator fraction_one, fraction_two, operator
   ((fraction_one.to_r).method(operator).(fraction_two.to_r)).to_s
 end
 
+p fraction_calculator("1/3", "2/4", "*")
+
 describe 'Fraction multiplication' do
   it 'can multiply two fractions and output the value in a string based fraction format' do
     expect(fraction_calculator("1/3", "2/4", "*")).to eq("1/6")

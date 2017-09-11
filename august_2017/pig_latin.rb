@@ -16,7 +16,7 @@ def transform_pig_latin sentence
       new_array << word
     else
       word += word[0] << "ay"
-      new_array << word.slice(1, word.length - 1)
+      new_array << word.slice(1, word.length)
     end
   end
 
