@@ -31,9 +31,10 @@ class NotificationTriggersController < ApplicationController
     @greater_than_4 = NotificationTrigger.find_greater_than_hour(fetch_params)
   end
 
-  def fetch_params
-    params.permit(:blackout_start_hours)
-  end
+  private
+    def fetch_params
+      params.permit(:blackout_start_hours)
+    end
 end
 
 # Migration
