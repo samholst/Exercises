@@ -26,7 +26,7 @@ class NotificationTrigger < ApplicationRecord
 end
 
 # Controller
-class NotificationTriggersController
+class NotificationTriggersController < ApplicationController
   def index
     @greater_than_4 = NotificationTrigger.find_greater_than_hour(fetch_params)
   end
