@@ -1,0 +1,7 @@
+xhr = new XMLHttpRequest();
+xhr.open('DELETE', ''/api/todo/7');
+xhr.send();
+
+xhr.open('DELETE', ''/api/todo/7; --drop table todos');
+
+ORM (Object Relational Mismatch)
