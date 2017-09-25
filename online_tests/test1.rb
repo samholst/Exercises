@@ -142,3 +142,12 @@ def stringSimilarity(inputs)
 end
 
 p stringSimilarity "abc"
+
+
+def hi
+if 0
+  puts 'test'
+end
+end
+
+hi
