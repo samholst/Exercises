@@ -29,7 +29,7 @@ def missingNO arr
   missing_number
 end
 
-describe "find missing number in the random array" do
+describe "finds missing number in the random array" do
   it "finds the missing sequential number 4 in the array" do
     arr_1 = [1,2,3,5,6]
     expect(missingNO(arr_1)).to eq(4)
