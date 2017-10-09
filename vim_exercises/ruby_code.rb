@@ -8,3 +8,6 @@ end
 
 some_method
 
+def some_rules
+  hello
+end
