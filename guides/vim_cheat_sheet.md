@@ -1,5 +1,3 @@
-## Vim Cheat Sheet
-
 ### Navigation
 
 - End of the file: shift + g
@@ -141,7 +139,7 @@
 
 ### Reseting Vim Settings
 
-```
+```plaintext
 cd
 mv .vimrc .vimrc-old
 mv .vim .vim-old
@@ -156,5 +154,5 @@ touch .vimrc; mkdir .vim
 
 ### Removing blocks of text in code files
 
-- `c + i + t` will remove the code between HTML tags, such as: `<div>Some content</div>`
-- `c + i + }` will remove the code inside of a JavaScript function
+- ```c + i + t``` will remove the code between HTML tags, such as: ```<div>Some content</div>```
+- ```c + i + }``` will remove the code inside of a JavaScript function
