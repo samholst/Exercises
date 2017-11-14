@@ -23,7 +23,7 @@ def find_substring_palindrome sentence
   palindrome_list.sort_by{|word| word.length}.last
 end
 
-p find_substring_palindrome "adracecarbye"
+# p find_substring_palindrome "adracecarbye"
 
 describe 'palindromic substring' do
   it 'finds the longest palindrome in a string' do
