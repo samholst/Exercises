@@ -83,7 +83,6 @@ apps=(
   vlc
   slack
   skype
-  postgres
   visual-studio-code
   atom
   sequel-pro
@@ -100,6 +99,5 @@ echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, postgresql, and
 brew install the-silver-surfer
 brew install node
 brew install wget
-brew install postgresql
 
 brew cleanup
