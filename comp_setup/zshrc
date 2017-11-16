@@ -99,8 +99,6 @@ export PATH=~/usr/local/bin:/usr/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
 #eval "$(anyenv init -)"
 #export PATH="/usr/local/opt/llvm/bin:$PATH"
 #export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
 
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 #alias cdport="cd /Library/WebServer/Documents/bottega/projects/portfolio/"
