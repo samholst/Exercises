@@ -31,18 +31,30 @@ def wordize int
                     2 => "two",
                     1 => "one",
                   }
-  wordize_string = ""
+  wordize_string = []
 
-  return numbers_names[int] if int == 0
+  return "" if int == 0
   
-  while int != 0
-    numbers_names.each do |num, word|
-      if int % num == 0
-        wordize_string += "#{word} "
-        int = int / num
-      end
+  numbers_names.each_pair do |num, word|
+    diff = int / num
+    
+    if diff == 1
+      wordize_string << "#{numbers_names[} #{word}"
+      int = int - (num * diff)
+    elsif diff > 1
+      wordize_string << "1 #{word}"
+      int = int - (num * diff)
     end
   end
+
+  wordize_string.join(" ")
 end
 
-wordize(100)
+wordize(151)
+
+
+
+
+
+
+

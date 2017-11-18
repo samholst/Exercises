@@ -75,6 +75,7 @@ source ~/.zshrc
 apps=(
   macvim
   dropbox
+  coreutils
   filezilla
   evernote
   firefox
