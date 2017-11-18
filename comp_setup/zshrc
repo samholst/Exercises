@@ -36,7 +36,7 @@ plugins=(bundler pow brew)
 source $ZSH/oh-my-zsh.sh
 #
 # Customize to your needs...
-
+alias timeout='gtimeout'
 alias ga='git add -A .'
 alias gb='git branch'
 alias gst='git status'
