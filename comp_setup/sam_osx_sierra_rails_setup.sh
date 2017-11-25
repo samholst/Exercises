@@ -58,9 +58,10 @@ echo "${GREEN}==> Installing Imagemagick...${NORMAL}"
 brew install sqlite3 imagemagick
 
 # Install Mysql & Postgresql
-echo "${GREEN}==> Installing MySQL and PostgreSQL...${NORMAL}"
+echo "${GREEN}==> Installing MySQL, redis, and PostgreSQL...${NORMAL}"
 brew install mysql
 brew install postgresql
+brew install redis
 
 # Install OhMyZsh
 echo "${GREEN}==> Installing OhMyZsh Shell...${NORMAL}"
@@ -100,5 +101,5 @@ echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, postgresql, and
 brew install the-silver-surfer
 brew install node
 brew install wget
-
+brew install httpie
 brew cleanup
