@@ -102,4 +102,5 @@ brew install the-silver-surfer
 brew install node
 brew install wget
 brew install httpie
+brew install zsh-autosuggestions
 brew cleanup
