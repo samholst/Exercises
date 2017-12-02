@@ -36,6 +36,7 @@ plugins=(bundler pow brew)
 source $ZSH/oh-my-zsh.sh
 #
 # Customize to your needs...
+
 alias timeout='gtimeout'
 alias ga='git add -A .'
 alias gb='git branch'
@@ -66,6 +67,7 @@ alias gstat="git status"
 alias gdiff="git diff"
 alias gcm="git commit -m"
 alias gpush="git push"
+alias gco="git checkout -b"
 
 #Crystal
 alias cr="crystal"
@@ -96,17 +98,20 @@ export PATH=~/usr/local/bin:/usr/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
 #export DATABASE_URL="postgres://isaac:@127.0.0.1:5432/blog"
 
 #blogexport PATH="$HOME/.anyenv/bin:$PATH"
+#eval "$(anyenv init -)"
 #export PATH="/usr/local/opt/llvm/bin:$PATH"
 #export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh106 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
 #alias cdport="cd /Library/WebServer/Documents/bottega/projects/portfolio/"
 #alias cdchap="cd /Library/WebServer/Documents/chapinka/"
 #alias cdexer="cd /Library/WebServer/Documents/bottega/exercises/"
-alias cdport="/Users/samholst/Google\ Drive/Code/bottega/projects/portfolio"
-alias cdchap2="/Users/samholst/Google\ Drive/Code/chapinka"
+alias cdport="/Users/samholst/drive/code/bottega/projects/portfolio"
+alias cdchap2="/Users/samholst/drive/code/chapinka"
 alias cdchap="/usr/local/var/www/chapinka"
-alias cdexer="/Users/samholst/Google\ Drive/Code/bottega/exercises/"
+alias cdexer="/Users/samholst/drive/code/bottega/exercises/"
 eval "$(rbenv init -)"
 
 export PATH="/usr/local/bin:$PATH"
