@@ -34,4 +34,9 @@ describe 'Find Sum In a Set of Numbers' do
     arr = [1,1,11,334,33,22,2,4,4,15,44,33,10]
     expect(find_sum arr, 27).to eq(false)
   end
+
+  it 'does not find the sum 16' do
+    arr = [3,5]
+    expect(find_sum arr, 10).to eq(false)
+  end
 end
