@@ -42,7 +42,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
 # Install Ruby
-echo "${GREEN}==> Installing Ruby Version 2.4.1 and setting it as the global version...${NORMAL}"
+echo "${GREEN}==> Installing Ruby Version 2.5.0 and setting it as the global version...${NORMAL}"
 rbenv install 2.5.0
 rbenv rehash
 rbenv global 2.5.0
