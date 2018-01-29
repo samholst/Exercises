@@ -84,6 +84,7 @@ apps=(
   visual-studio-code
   atom
   sequel-pro
+  wrk
 )
 
 # Install apps to /Applications
