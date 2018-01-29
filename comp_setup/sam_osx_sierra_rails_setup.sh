@@ -43,9 +43,9 @@ source ~/.bash_profile
 
 # Install Ruby
 echo "${GREEN}==> Installing Ruby Version 2.4.1 and setting it as the global version...${NORMAL}"
-rbenv install 2.4.1
+rbenv install 2.5.0
 rbenv rehash
-rbenv global 2.4.1
+rbenv global 2.5.0
 
 echo "${GREEN}==> Installing Bundler and Rails gems...${NORMAL}"
 gem install bundler
@@ -70,12 +70,8 @@ echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 
 # Sam's Apps
-#brew cask install bettertouchtool
-#brew cask install iterm2
-
 apps=(
   macvim
-  dropbox
   coreutils
   filezilla
   evernote
@@ -96,7 +92,7 @@ apps=(
 echo "${GREEN}==> Installing Sam's most used apps...${NORMAL}"
 brew cask install --appdir="/Applications" ${apps[@]}
 
-echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, postgresql, and wget...${NORMAL}"
+echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, and wget...${NORMAL}"
 #brew install caskroom/cask/brew-cask
 brew install the-silver-surfer
 brew install node
