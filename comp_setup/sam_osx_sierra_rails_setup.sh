@@ -74,17 +74,14 @@ apps=(
   macvim
   coreutils
   filezilla
-  evernote
   firefox
   google-chrome
   iterm2
   vlc
   slack
   skype
-  visual-studio-code
   atom
   sequel-pro
-  wrk
 )
 
 # Install apps to /Applications
@@ -98,6 +95,7 @@ echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, and wget...${NO
 brew install the-silver-surfer
 brew install node
 brew install wget
+brew install wrk
 brew install httpie
 brew install zsh-autosuggestions
 brew cleanup
