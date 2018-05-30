@@ -1,3 +1,9 @@
+" Vim Gutter options
+set updatetime=100
+let g:gitgutter_override_sign_column_highlight = 0
+" let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -19,6 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'lucapette/vim-ruby-doc'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'jakemoldham/yellow-metal'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-haml'
@@ -263,3 +270,6 @@ nnoremap <leader>m A # => <Esc>
 "  " Mark the highlighted lines for annotation
 "
 vnoremap <leader>m :norm A # => <Esc>
+
+" Gutter Settings
+highlight clear SignColumn
