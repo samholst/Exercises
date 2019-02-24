@@ -26,8 +26,8 @@
 set -e
 
 # Install Xcode
-echo "${GREEN}==> Installing Xcode...${NORMAL}"
-xcode-select --install
+#echo "${GREEN}==> Installing Xcode...${NORMAL}"
+#xcode-select --install
 
 # Install and prepare Homebrew
 echo "${GREEN}==> Installing and preparing hombrew...${NORMAL}"
@@ -43,9 +43,9 @@ source ~/.bash_profile
 
 # Install Ruby
 echo "${GREEN}==> Installing Ruby Version 2.5.0 and setting it as the global version...${NORMAL}"
-rbenv install 2.5.0
+rbenv install 2.6.1
 rbenv rehash
-rbenv global 2.5.0
+rbenv global 2.6.1
 
 echo "${GREEN}==> Installing Bundler and Rails gems...${NORMAL}"
 gem install bundler
@@ -72,13 +72,9 @@ source ~/.zshrc
 # Sam's Apps
 apps=(
   macvim
-  coreutils
-  filezilla
   firefox
   google-chrome
-  iterm2
   vlc
-  slack
   skype
   atom
   sequel-pro
@@ -92,10 +88,5 @@ brew cask install --appdir="/Applications" ${apps[@]}
 
 echo "${GREEN}==> Installing brew-cask, the-silver-surfer, node, and wget...${NORMAL}"
 #brew install caskroom/cask/brew-cask
-brew install the-silver-surfer
-brew install node
-brew install wget
-brew install wrk
-brew install httpie
-brew install zsh-autosuggestions
+brew install the_silver_searcher node wget wrk httpie zsh-autosuggestions
 brew cleanup
