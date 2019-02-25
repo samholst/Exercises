@@ -59,9 +59,7 @@ brew install sqlite3 imagemagick
 
 # Install Mysql & Postgresql
 echo "${GREEN}==> Installing MySQL, redis, and PostgreSQL...${NORMAL}"
-brew install mysql
-brew install postgresql
-brew install redis
+brew install mysql postgresql redis
 
 # Install OhMyZsh
 echo "${GREEN}==> Installing OhMyZsh Shell...${NORMAL}"
