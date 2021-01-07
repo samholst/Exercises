@@ -55,7 +55,7 @@ echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
 
 # Install ImageMagick
 echo "${GREEN}==> Installing Imagemagick...${NORMAL}"
-brew install sqlite3 imagemagick
+brew install sqlite3 imagemagick coreutils
 
 # Install Mysql & Postgresql
 echo "${GREEN}==> Installing MySQL, redis, and PostgreSQL...${NORMAL}"
